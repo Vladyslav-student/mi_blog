@@ -1,25 +1,76 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8" />
-    <title>Mi Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Web</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
     <header>
-      <h1>Bienvenidos a mi blog de prueba</h1>
-      <nav>
-        </nav>
+        <div class="container navbar">
+            <div class="logo">MiBlog<span class="dot">.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Artículos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="modo-oscuro" class="btn-toggle">🌙</button>
+        </div>
     </header>
+
     <main>
-      <article>
-        <h2>Título del artículo</h2>
-        <p>Este es el contenido inicial de tu blog. Personalízalo con tu propio texto y estilos.</p>
-      </article>
+        <section class="hero">
+            <div class="container">
+                <h1>Hola, soy Desarrollador Web</h1>
+                <p>Bienvenido a mi espacio personal donde comparto mis proyectos y aprendizajes sobre tecnología y código.</p>
+                <a href="#" class="btn-primary">Ver mis proyectos</a>
+            </div>
+        </section>
+
+        <section class="container content">
+            <h2>Últimas publicaciones</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-header color-1"></div>
+                    <div class="card-body">
+                        <h3>Primer Despliegue</h3>
+                        <p>Aprendiendo a subir mi primera web estática usando GitHub Pages y Git desde la terminal.</p>
+                        <a href="#" class="read-more">Leer más &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header color-2"></div>
+                    <div class="card-body">
+                        <h3>Diseño CSS</h3>
+                        <p>Mejorando la apariencia visual con Flexbox, Grid y paletas de colores modernas.</p>
+                        <a href="#" class="read-more">Leer más &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header color-3"></div>
+                    <div class="card-body">
+                        <h3>JavaScript Básico</h3>
+                        <p>Añadiendo interactividad a la web. ¡Prueba el botón de modo oscuro en la cabecera!</p>
+                        <a href="#" class="read-more">Leer más &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
     <footer>
-      <p>&copy; 2026 Vladyslav Kachko</p>
+        <div class="container">
+            <p>&copy; 2026 Vladyslav Kachko</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
